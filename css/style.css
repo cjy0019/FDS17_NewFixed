@@ -49,9 +49,15 @@ body {
 .main {
   background-color: blue;
   padding: 30px 15px;
-  overflow: hidden;
+  /* overflow: hidden; */
   min-height: 450px;
 
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 .group {
@@ -73,6 +79,10 @@ body {
 .group3 {
   background-color: coral;
   width: 190px;
+}
+
+.clearfix {
+  clear: both;
 }
 
 .slogan {
