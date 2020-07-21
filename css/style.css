@@ -287,7 +287,7 @@ a {
 }
 
 .group1 {
-  background-color: pink;
+  background-color: white;
   width: 250px;
 }
 
@@ -314,6 +314,7 @@ a {
   border-radius: 5px;
   box-shadow: 5px 5px 0 0 #ccc;
   padding: 10px;
+  width: calc(100% - 5px);
 }
 
 .login-heading {
@@ -407,6 +408,29 @@ a {
   color: #db5629;
 }
 
+/* 유효성 검사 배너 링크 */
+.validation-list {
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.validation-list a {
+  display: block;
+  padding: 8px 10px 8px 45px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-image: url(./images/validation_icon.png), linear-gradient(180deg, #ccc, #eee);
+  background-repeat: no-repeat, repeat;
+  background-color: #ccc;
+  background-position: 15px 50%, 0 0;
+}
+
+.validation-list a:hover {
+  color: #f00;
+}
 
 /* 슬로건 */
 .slogan {
