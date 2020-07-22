@@ -541,6 +541,39 @@ a {
   padding: 0 10px;
 }
 
+/* .board {
+  background-color: #f9a939;
+  position: relative;
+}
+
+.notice-heading {
+  background-color: green;
+  float: left;
+}
+
+.notice-list {
+  list-style: none;
+  background-color: yellowgreen;
+  position: absolute;
+}
+
+.pds-heading {
+  background-color: #db5629;
+}
+
+.pds-list {
+  background-color: #296897;
+  position: absolute;
+}
+
+.notice-more {
+  position: absolute;
+}
+
+.pds-more {
+  position: absolute;
+} */
+
 /* 슬로건 */
 .slogan {
   background-color: orange;
