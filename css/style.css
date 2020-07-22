@@ -484,6 +484,62 @@ a {
   float: right;
 }
 
+/* 검색 폼 */
+.search-form {
+  border: 1px solid #aaa;
+  border-bottom-color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 25px 10px;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+}
+
+.search-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-form div[role="group"] {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-form label::before {
+  font-family: 'fontello';
+  display: inline-block;
+  width: 1em;
+  margin-right: .2em;
+  content: '\e802';
+}
+
+.search-form label,
+.btn-search {
+  white-space: nowrap;
+}
+
+.search-form input[name="search"] {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 1px 1px 1px 5px;
+  height: 24px;
+  flex-grow: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn-search {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #222;
+  font-size: 1.3rem;
+  cursor: pointer;
+  height: 24px;
+  text-align: center;
+  padding: 0 10px;
+}
 
 /* 슬로건 */
 .slogan {
