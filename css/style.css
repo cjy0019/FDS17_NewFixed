@@ -1,7 +1,6 @@
 @import url("./normalize.css");
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 
-
 /* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css); */
 @import url(./fontello.css);
 
@@ -18,7 +17,8 @@ html {
 body {
   font-size: 1.4rem;
   color: #181818;
-  background: url(./images/bg_flower.png) no-repeat 50% 0 scroll, #fff linear-gradient(to bottom, #ccc 0%, #fff 70%, #fff 100%);
+  background: url(./images/bg_flower.png) no-repeat 50% 0 scroll,
+    #fff linear-gradient(to bottom, #ccc 0%, #fff 70%, #fff 100%);
   font-family: "Spoqa Han Sans";
   font-weight: 400;
 }
@@ -105,11 +105,13 @@ a {
 
 /* 메인 메뉴 */
 .menu {
-  background: linear-gradient(to bottom,
-      #f9a939 0%,
-      #f7a727 49%,
-      #f7a727 50%,
-      #f28654 100%);
+  background: linear-gradient(
+    to bottom,
+    #f9a939 0%,
+    #f7a727 49%,
+    #f7a727 50%,
+    #f28654 100%
+  );
   padding-left: 0;
   list-style: none;
   margin: 0 0 35px;
@@ -168,17 +170,17 @@ a {
 }
 
 .sub-menu a::before {
-  content: '\f192';
-  font-family: 'fontello';
+  content: "\f192";
+  font-family: "fontello";
   display: inline-block;
   width: 1em;
-  margin-right: .2em;
-  margin-left: .2em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
 }
 
 .sub-menu a:hover::before,
 .sub-menu a:focus::before {
-  content: '\e800';
+  content: "\e800";
 }
 
 .sub-menu1,
@@ -260,18 +262,20 @@ a {
 }
 
 .visual::before {
-  background-image: url(./images/ani_flower_01.png), url(./images/ani_flower_02.png);
+  background-image: url(./images/ani_flower_01.png),
+    url(./images/ani_flower_02.png);
   background-position: 0 -10px, 670px 0;
 }
 
 .visual::after {
-  background-image: url(./images/ani_flower_03.png), url(./images/ani_flower_04.png);
+  background-image: url(./images/ani_flower_03.png),
+    url(./images/ani_flower_04.png);
   background-position: 300px 0px, 800px 20px;
   animation-delay: 1000ms;
 }
 
 .visual-text {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2.4rem;
   width: 500px;
   animation: textAni 3000ms ease-in-out forwards;
@@ -331,7 +335,6 @@ a {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 10px 10px 0 10px;
-
 }
 
 .login-form fieldset {
@@ -358,7 +361,6 @@ a {
   height: 24px;
   border: 1px solid #aaa;
   padding: 1px 1px 1px 0.5em;
-
 }
 
 .btn-login {
@@ -387,7 +389,6 @@ a {
 
 .member-only li:first-child {
   float: left;
-
 }
 
 .member-only li:last-child {
@@ -400,10 +401,10 @@ a {
 }
 
 .member-only a::before {
-  content: '\e803';
-  font-family: 'fontello';
+  content: "\e803";
+  font-family: "fontello";
   display: inline-block;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   color: #db5629;
 }
@@ -422,7 +423,8 @@ a {
   margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
-  background-image: url(./images/validation_icon.png), linear-gradient(180deg, #ccc, #eee);
+  background-image: url(./images/validation_icon.png),
+    linear-gradient(180deg, #ccc, #eee);
   background-repeat: no-repeat, repeat;
   background-color: #ccc;
   background-position: 15px 50%, 0 0;
@@ -451,7 +453,7 @@ a {
   margin: 0;
 }
 
-.term-list>div {
+.term-list > div {
   margin-top: 10px;
 }
 
@@ -475,12 +477,12 @@ a {
   margin-top: 5px;
 }
 
-.even>.term-list-subject,
-.even>.term-list-brief {
+.even > .term-list-subject,
+.even > .term-list-brief {
   float: left;
 }
 
-.even>.term-list-thumbnail {
+.even > .term-list-thumbnail {
   float: right;
 }
 
@@ -507,11 +509,11 @@ a {
 }
 
 .search-form label::before {
-  font-family: 'fontello';
+  font-family: "fontello";
   display: inline-block;
   width: 1em;
-  margin-right: .2em;
-  content: '\e802';
+  margin-right: 0.2em;
+  content: "\e802";
 }
 
 .search-form label,
@@ -541,39 +543,100 @@ a {
   padding: 0 10px;
 }
 
-/* .board {
-  background-color: #f9a939;
+/* 공지사항 및 자료실 */
+.board {
+  background-color: yellow;
+  margin-top: 20px;
   position: relative;
+  min-height: 180px;
 }
-
-.notice-heading {
-  background-color: green;
-  float: left;
-}
-
-.notice-list {
-  list-style: none;
-  background-color: yellowgreen;
-  position: absolute;
-}
-
+.notice-heading,
 .pds-heading {
-  background-color: #db5629;
+  background-color: pink;
+  float: left;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.tab {
+  display: block;
+  color: #666;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+}
+.tab-act .tab {
+  color: #db5629;
+  border-color: #db5629 #db5629 #fff #db5629;
+  background: #fff;
+}
+.notice-list,
+.pds-list,
+.notice-more,
+.pds-more {
+  display: none;
+}
+.tab-act .notice-list,
+.tab-act .pds-list,
+.tab-act .notice-more,
+.tab-act .pds-more {
+  display: block;
 }
 
+.notice-list,
 .pds-list {
-  background-color: #296897;
+  background-color: silver;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
   position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
 }
-
-.notice-more {
-  position: absolute;
+.notice-list li,
+.pds-list li {
+  background-color: orange;
+  margin-bottom: 10px;
 }
-
+.notice-list li::after,
+.pds-list li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.notice-list a,
+.pds-list a {
+  background-color: skyblue;
+  float: left;
+  width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.notice-list a::before,
+.pds-list a::before {
+  content: "\f192";
+  font-family: "fontello";
+  display: inline-block;
+  margin-right: 0.2em;
+}
+.notice-list time,
+.pds-list time {
+  background-color: violet;
+  float: right;
+}
+.notice-more,
 .pds-more {
   position: absolute;
-} */
-
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+.icon-plus::before {
+  color: hsla(110, 70%, 50%, 1);
+}
 /* 슬로건 */
 .slogan {
   background-color: orange;
