@@ -105,13 +105,11 @@ a {
 
 /* 메인 메뉴 */
 .menu {
-  background: linear-gradient(
-    to bottom,
-    #f9a939 0%,
-    #f7a727 49%,
-    #f7a727 50%,
-    #f28654 100%
-  );
+  background: linear-gradient(to bottom,
+      #f9a939 0%,
+      #f7a727 49%,
+      #f7a727 50%,
+      #f28654 100%);
   padding-left: 0;
   list-style: none;
   margin: 0 0 35px;
@@ -151,12 +149,17 @@ a {
 }
 
 .sub-menu {
+  display: none;
   position: absolute;
   display: none;
   margin: 0;
   padding-left: 0;
   list-style: none;
   white-space: nowrap;
+}
+
+.menu-act .sub-menu {
+  display: block;
 }
 
 .sub-menu li,
@@ -195,29 +198,6 @@ a {
   right: 0;
 }
 
-.sub-menu1 {
-  display: block;
-}
-
-.sub-menu2 {
-  display: none;
-}
-
-.sub-menu3 {
-  display: none;
-}
-
-.sub-menu4 {
-  display: none;
-}
-
-.sub-menu5 {
-  display: none;
-}
-
-.sub-menu6 {
-  display: none;
-}
 
 /* 비주얼 */
 @keyframes textAni {
@@ -453,7 +433,7 @@ a {
   margin: 0;
 }
 
-.term-list > div {
+.term-list>div {
   margin-top: 10px;
 }
 
@@ -477,12 +457,12 @@ a {
   margin-top: 5px;
 }
 
-.even > .term-list-subject,
-.even > .term-list-brief {
+.even>.term-list-subject,
+.even>.term-list-brief {
   float: left;
 }
 
-.even > .term-list-thumbnail {
+.even>.term-list-thumbnail {
   float: right;
 }
 
@@ -545,19 +525,29 @@ a {
 
 /* 공지사항 및 자료실 */
 .board {
-  background-color: yellow;
   margin-top: 20px;
   position: relative;
-  min-height: 180px;
+  padding-top: 45px;
+
 }
+
 .notice-heading,
 .pds-heading {
-  background-color: pink;
-  float: left;
   margin: 0;
   font-size: 1.4rem;
   font-weight: 400;
+  position: absolute;
+  top: 0;
 }
+
+.notice-heading {
+  left: 0;
+}
+
+.pds-heading {
+  left: 74px;
+}
+
 .tab {
   display: block;
   color: #666;
@@ -566,17 +556,20 @@ a {
   padding: 5px 10px;
   background: #ccc linear-gradient(180deg, #ccc, #eee);
 }
+
 .tab-act .tab {
   color: #db5629;
   border-color: #db5629 #db5629 #fff #db5629;
   background: #fff;
 }
+
 .notice-list,
 .pds-list,
 .notice-more,
 .pds-more {
   display: none;
 }
+
 .tab-act .notice-list,
 .tab-act .pds-list,
 .tab-act .notice-more,
@@ -586,35 +579,33 @@ a {
 
 .notice-list,
 .pds-list {
-  background-color: silver;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  width: 100%;
+  min-height: 130px;
 }
+
 .notice-list li,
 .pds-list li {
-  background-color: orange;
   margin-bottom: 10px;
 }
+
 .notice-list li::after,
 .pds-list li::after {
   content: "";
   display: block;
   clear: both;
 }
+
 .notice-list a,
 .pds-list a {
-  background-color: skyblue;
   float: left;
   width: 300px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
+
 .notice-list a::before,
 .pds-list a::before {
   content: "\f192";
@@ -622,11 +613,12 @@ a {
   display: inline-block;
   margin-right: 0.2em;
 }
+
 .notice-list time,
 .pds-list time {
-  background-color: violet;
   float: right;
 }
+
 .notice-more,
 .pds-more {
   position: absolute;
@@ -634,9 +626,11 @@ a {
   right: -8px;
   padding: 8px;
 }
+
 .icon-plus::before {
   color: hsla(110, 70%, 50%, 1);
 }
+
 /* 슬로건 */
 .slogan {
   background-color: orange;
