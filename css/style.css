@@ -33,6 +33,8 @@ legend {
   overflow: hidden;
   margin: -1px;
   clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(0 0 0 0);
+  clip: (0, 0, 0, 0);
 }
 
 /* 링크 스타일 */
@@ -766,6 +768,7 @@ a {
   height: 18px;
   padding: 0;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .btn-next {
