@@ -689,6 +689,88 @@ a {
   color: #db5629;
 }
 
+/* 신규 이벤트 및 관련 사이트 */
+.gradient-box {
+  padding: 10px;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.event {
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+
+.event-heading {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.event-heading span {
+  color: #db5629;
+}
+
+.event-brief em {
+  font-style: normal;
+}
+
+.event-thumbnail,
+.event-brief {
+  margin: 10px 0;
+}
+
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #999;
+}
+
+/* .btn-wrap {
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  left: 120px;
+} */
+
+/* .btn-prev,
+.btn-next {
+  background-color: skyblue;
+  border: 0;
+  background: url("/css/images/back_forward.png");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+  padding: 18px 0 0 0;
+  overflow: hidden;
+}
+
+.btn-next {
+  background-position: -35px 0;
+} */
+.btn-wrap {
+  background-color: pink;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn-prev,
+.btn-next {
+  background-color: #ccc;
+  border: 0;
+  background: url("/css/images/back_forward.png");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 18px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn-next {
+  background-position: -35px 0;
+}
 
 
 /* 슬로건 */
