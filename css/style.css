@@ -691,7 +691,7 @@ a {
   color: #db5629;
 }
 
-/* 신규 이벤트 및 관련 사이트 */
+/* 신규 이벤트 및 관련 사이트, 관련사이트*/
 .gradient-box {
   padding: 10px;
   background: #ccc linear-gradient(180deg, #ccc, #eee);
@@ -705,13 +705,15 @@ a {
 }
 
 .event-heading,
-.related-heading {
+.related-heading,
+.favorite-heading {
   font-size: 1.6rem;
   margin: 0;
 }
 
 .event-heading span,
-.related-heading span {
+.related-heading span,
+.favorite-heading span {
   color: #db5629;
 }
 
@@ -806,6 +808,82 @@ a {
 .related-list:hover {
   height: 147px;
   padding: 10px 0;
+}
+
+/* 인기 사이트 */
+.group3 .gradient-box:nth-child(2) {
+  margin-top: 20px;
+}
+
+.favorite {
+  position: relative;
+}
+
+.favorite-list {
+  margin: 10px 0 0 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* .favorite-list li {
+  counter-increment: number;
+  margin-top: 5px;
+  background-color: violet;
+  position: relative;
+} */
+
+.favorite-list li {
+  counter-increment: number;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.favorite-list a {
+  flex-grow: 1;
+}
+
+.favorite li::before {
+  content: counter(number);
+  padding: 2px 5px;
+  color: #fff;
+  background-color: #aaa;
+  border-radius: 2px;
+  margin-right: 5px;
+  font-size: 1.3rem;
+}
+
+.up,
+.down,
+.stop {
+  font-style: normal;
+  width: 9px;
+  height: 11px;
+  overflow: hidden;
+  padding-top: 11px;
+  background-image: url(./images/rank.png);
+  background-repeat: no-repeat;
+  /* position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -5px; */
+}
+
+.no2 em {
+  background-position: 0 100%;
+}
+
+.no3 em {
+  background-position: 0 50%;
+}
+
+
+.favorite-more {
+  position: absolute;
+  padding: 8px;
+  top: -8px;
+  right: -8px;
 }
 
 /* 슬로건 */
