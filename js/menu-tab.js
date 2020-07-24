@@ -6,13 +6,13 @@ var tab = $('.tab');
 
 //기능 구현
 
-btn.click(function (e) {
+btn.hover(function (e) {
   e.preventDefault();
   items.removeClass('menu-act');
   $(this).parent().addClass('menu-act');
 })
 
-tab.click(function (e) {
+tab.hover(function (e) {
   e.preventDefault();
   panel.removeClass('tab-act');
   $(this).parent().parent().addClass('tab-act');
