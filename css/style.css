@@ -931,7 +931,7 @@ a {
 
 .slogan-brief q::before {
   font-size: 3rem;
-  /* vertical-align: bottom; */
+  vertical-align: bottom;
   position: relative;
   top: 10px;
   margin-right: 5px;
