@@ -941,16 +941,70 @@ a {
   content: "";
 }
 
-
-
 .footer-bg {
-  background-color: purple;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .footer {
-  background-color: skyblue;
+  padding: 0px 100px 0px 170px;
+  position: relative;
+
+}
+
+/* 푸터로고 */
+.footer-logo {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+
+/* 가이드 링크 */
+.guide-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #7b8385;
+  border-radius: 5px;
+  margin: 0;
+  padding: 4px 20px;
+  margin-bottom: 10px;
+}
+
+.guide-list a {
+  color: #fff;
+  display: block;
+  padding: 6px 15px;
+  text-transform: uppercase;
+}
+
+/* 주소및 연락처 */
+.address {
+  font-style: normal;
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.address span {
+  margin-right: 10px;
+}
+
+/* 저작권 */
+.copyright {
+  font-size: 1.4rem;
+  display: block;
+}
+
+/* 뱃지 */
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
